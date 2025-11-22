@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم الذوق الرفيع</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:"Tahoma"; }
+        body { background:#fefefe; }
+
+        /* الهيدر */
+        header {
+            background:#ff9800;
+            color:#fff;
+            padding:20px;
+            text-align:center;
+        }
+        header h1 { font-size:36px; }
+
+        /* أقسام الطعام */
+        section { padding:50px 20px; }
+        section h2 { text-align:center; margin-bottom:30px; font-size:28px; }
+
+        .menu-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+            gap:20px;
+        }
+
+        .item {
+            background:#fff;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px #0002;
+            text-align:center;
+            transition:0.3s;
+        }
+        .item:hover { transform:scale(1.05); }
+
+        .item img {
+            width:100%;
+            height:150px;
+            border-radius:10px;
+            object-fit:cover;
+            background:#ccc; /* placeholder */
+        }
+
+        .item h3 { margin-top:10px; font-size:20px; }
+        .item p { margin-top:5px; font-size:16px; color:#555; }
+
+        /* عن المطعم */
+        .about { background:#f4f4f4; text-align:center; }
+        .about p { margin-top:10px; font-size:18px; line-height:1.8; }
+
+        /* الفوتر */
+        footer { background:#222; color:white; text-align:center; padding:15px; margin-top:20px; }
+
+        @media (max-width:600px){
+            header h1 { font-size:28px; }
+            section h2 { font-size:22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <h1>مطعم الذوق الرفيع</h1>
+    </header>
+
+    <!-- قسم الأكلات السريعة -->
+    <section id="fastfood">
+        <h2>الأكلات السريعة</h2>
+        <div class="menu-grid">
+            <div class="item"><img src="qico-listing.jpg" alt="برجر"><h3>برجر</h3><p>120ج</p></div>
+            <div class="item"><img src="shaorma-pui-vita-vegetala-originala-farfurie-4.png" alt="ساندوتش شاورما"><h3>ساندوتش شاورما</h3><p> 70ج  </p></div>
+            <div class="item"><img src="pngtree-authentic-italian-pizza-with-cheese-and-fresh-vegetable-toppings-png-image_14714611.png" alt="بيتزا"><h3>بيتزا</h3><p> 110ج </p></div>
+        </div>
+    </section>
+
+    <!-- قسم الحلويات -->
+    <section id="desserts">
+        <h2>الحلويات</h2>
+        <div class="menu-grid">
+            <div class="item"><img src="Screenshot 2025-11-22 141245.png" alt="كنافة"><h3>كنافة</h3><p>65ج </p></div>
+            <div class="item"><img src="Screenshot 2025-11-22 141610.png" alt="بقلاوة"><h3>بقلاوة</h3><p> 90ج </p></div>
+            <div class="item"><img src="66d585a4d2025.png" alt="آيس كريم"><h3>آيس كريم</h3><p> 50ج</p></div>
+        </div>
+    </section>
+
+    <!-- قسم المشروبات -->
+    <section id="drinks">
+        <h2>المشروبات</h2>
+        <div class="menu-grid">
+            <div class="item"><img src="Screenshot 2025-11-22 143354.png" alt="عصير برتقال"><h3>عصير برتقال</h3><p> 25ج</p></div>
+            <div class="item"><img src="Screenshot 2025-11-22 143736.png" alt="عصير مانجو"><h3>عصير مانجو</h3><p>50ج  </p></div>
+            <div class="item"><img src="Screenshot 2025-11-22 144107.png" alt="مشروب غازي"><h3>مشروب غازي</h3><p>15ج </p></div>
+        </div>
+    </section>
+
+    <!-- قسم المشويات -->
+    <section id="grilled">
+        <h2>المشويات</h2>
+        <div class="menu-grid">
+            <div class="item"><img src="Screenshot 2025-11-22 144617.png" alt="كباب"><h3>كباب</h3><p> 300ج  </p></div>
+            <div class="item"><img src="Screenshot 2025-11-22 144823.png" alt="كفتة"><h3>كفتة</h3><p> 400ج </p></div>
+            <div class="item"><img src="Screenshot 2025-11-22 145030.png" alt="شيش طاووق"><h3>شيش طاووق</h3><p>  350ج</p></div>
+        </div>
+    </section>
+
+    <!-- قسم المأكولات المقلية -->
+    <section id="fried">
+        <h2>المأكولات المقلية</h2>
+        <div class="menu-grid">
+           <div class="item"><img src="Screenshot 2025-11-22 145531.png" alt="بطاطس"><h3>بطاطس</h3><p>50ج </p></div>
+            <div class="item"><img src="Screenshot 2025-11-22 145708.png" alt="ناغتس"><h3>ناغتس</h3><p> 130ج </p></div>
+            <div class="item"><img src="Screenshot 2025-11-22 145846.png" alt="حلقات بصل"><h3>حلقات بصل</h3><p> 75ج</p></div>
+           
+            
+        </div>
+    </section>
+
+    <!-- عن المطعم -->
+    <section class="about">
+        <h2>من نحن</h2>
+        <p>
+            نقدم لك أفضل الأكلات الشرقية والغربية والمشويات، مع خدمة ممتازة وجودة عالية… رضاكم هدفنا الأول.
+        </p>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025 مطعم الذوق الرفيع</p>
+    </footer>
+
+</body>
+</html>
